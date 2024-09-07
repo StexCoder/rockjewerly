@@ -1,0 +1,176 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(black, rgb(0, 0, 14));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    }
+    
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+   
+   
+  
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.mainlogo{ 
+    font-size: 24px;
+    margin-right: 20px; /*Space between logo and Product link*/
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.menu{
+    margin-left: 20px;
+    /*ensures space between logo and product*/
+
+}  
+
+.cart-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #000000;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(247, 245, 245, 0.1);
+}
+
+h2, h3 {
+    color: #fff7f7;
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    border-top: 1px solid #d41111;
+    margin-bottom: 20px;
+}
+
+#cart-items div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ff0000;
+}
+
+#cart-items div span {
+    font-size: 1rem;
+}
+
+#cart-items button {
+    background-color: #ff0800;
+    color: #fff0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+#cart-items button:hover {
+    background-color: #c9302c;
+}
+
+#cart-summary {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #000000;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ff0000;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #bd9102;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e71912;
+}
+
+#total-price {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+/**/
+
+
+/**/
+#active svg {
+    color: red; /* Red color for the active state */
+}
+.pr{
+    font-size: 1.2rem;
+}
+.pr:hover{
+    color: red;
+    animation:  0.7s ease-in-out 0.3s ;
+  }
+
+  .rj{
+    color: rgb(176, 218, 176);
+  }
+  .jj{
+    color: rgb(243, 69, 38);
+  }
+  .rj:hover{
+    color: rgb(243, 69, 38);
+    animation:  0.7s ease-in-out 0.3s ;
+  }
+  
+  .jj:hover{
+    color: rgb(176, 218, 176);
+    animation:  0.7s ease-in-out 0.3s ;
+  }

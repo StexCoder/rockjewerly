@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cartstyle.css">
+    <title>Your Cart</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1 class="mainlogo"><span class="rj">Rock</span> <span class="jj">Jewelry</span></h1>
+        </div>
+    
+        <div class="menu">
+            <a href="main.html" class="pr">Products</a>
+        </div>
+    
+        <div class="shopping-cart">
+            <a href="#" class="cart" id="active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items">
+            <!-- Dynamic content will be added here -->
+        </div>
+        <div id="cart-summary">
+            <p id="total-price"></p>
+        </div>
+    </div>
+
+    <!-- User Info Form -->
+    <form id="checkout-form">
+        <h3>Checkout</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" required>
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" required>
+
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" required>
+
+        <label for="email">Email (for 10% off):</label>
+        <input type="email" id="email">
+        
+        <button type="submit">Checkout</button>
+    </form>
+    
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script src="cart.js"></script>
+</body>
+</html>
